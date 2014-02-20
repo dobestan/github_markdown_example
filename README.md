@@ -1,18 +1,20 @@
 #NHN NEXT : Ruby on Rails Study
 
-##Contributor
+##Principle
+1. SoC : Seperation of Concerns
+    - encapsulation
+    - information hiding
+2. Controller be light, Model be heavy
 
-##Functional Requirements Spec
-- Goal / Principle
-  1. SoC : Seperation of Concerns
-      - encapsulation
-      - information hiding
-  2. Controller be light, Model be heavy
+
+##Requirements Spec
+- original requirements spec : https://www.evernote.com/shard/s212/sh/912d1fad-6dce-48e7-816d-ccb8de995f49/c301540803eb851ec28db3ef8cd86e3d
 
 - v0.1.0
   - Model
     - Album Model은 두 concern을 포함한다. 
-               - Web Crawler / Youtube Parser
+      - Web Crawler
+      - Youtube Parser
 
     - CONTENT_PROVIDER Model은 Album Model을 상속받는다.
     - CONTENT_PROVIDER Model은 실제 DB를 가지지 않는다. 실제 테이블은 Album에 의해서만 생성된다.
